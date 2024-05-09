@@ -55,3 +55,26 @@ button {
     color: white;
     font-size: 20px;
 }
+
+table {
+    width: 49%;
+    margin: 60px auto;
+    border-collapse: collapse;
+    color: white
+}
+
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 6px;
+    text-align: left;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.555);
+    
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.555);
+    color: rgb(255, 213, 0);
+    text-align: center;
+}

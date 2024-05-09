@@ -14,6 +14,53 @@
         <!--Aqui debajo creo el botón de guardar que invoca a la funcion save, que guarda-->
         <button id="save-btn" onclick="save()">GUARDAR</button>  
         <p id="save-el">Entradas anteriores:</p>
-        <script src="index.js"></script>     
+        <script src="index.js"></script>    
+        
+        <table>
+            <tr>
+                <th>Destino</th>
+                <th>Precio por Billete (€)</th>
+                <th>Cantidad</th>
+                <th>Total (€)</th>
+            </tr>
+            
+            <tr>
+                <td>Madrid</td>
+                <td>30€</td>
+                <td><input type="number" min="0" value="0" onclick="calculoTotal()"></td>
+                <td><p id="precio-final">0 €</p></td>
+            </tr>
+            
+            <tr>
+                <td>Sevilla</td>
+                <td>35€</td>
+                <td><input type="number" min="0" value="0"></td>
+                <td><p id="precio-final">0 €</p></td>
+            </tr>
+            <tr>
+                <td>Granada</td>
+                <td>25€</td>
+                <td><input type="number" min="0" value="0"></td>
+                <td><p id="precio-final">0 €</p></td>
+            </tr>
+             <tr>
+                <td>Barcelona</td>
+                <td>45€</td>
+                <td><input type="number" min="0" value="0"></td>
+                <td><p id="precio-final">0 €</p></td>
+            </tr>
+            <tr>
+                <td>Valencia</td>
+                <td>20€</td>
+                <td><input type="number" min="0" value="0"></td>
+                <td><p id="precio-final">0 €</p></td>
+            </tr>
+            <tr>
+                <td>Vigo</td>
+                <td>50€</td>
+                <td><input type="number" min="0" value="0"></td>
+                <td><p id="precio-final">0 €</p></td>
+            </tr>
+        </table>         
     </body>
 </html>

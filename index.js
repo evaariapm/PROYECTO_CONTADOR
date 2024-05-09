@@ -38,5 +38,12 @@ function save () {
     count = 0
 }
 
+//Creación tabla con el calculo total de entradas
 
+let precioFinal = document.getElementById("precio-final") 
 
+function calculoTotal (){
+    let billetes = 5
+    let precioBillete = 50
+    let total = billetes * precioBillete
+}
