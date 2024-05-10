@@ -6,60 +6,60 @@
         <h1>Numero de usuarios de la estación</h1>
         <hr>
         <h2 id="count-el">0</h2>
-        
-        <!--Aqui debajo creo el botón de sumar que invoca a la funcion increment, que suma-->
         <button id="increment-btn" onclick="increment()">SUMAR GENTE</button>
-        <!--Aqui debajo creo el botón de restar que invoca a la funcion decremen, que resta-->
         <button id="decrement-btn" onclick="decrement()">RESTAR GENTE</button>
-        <!--Aqui debajo creo el botón de guardar que invoca a la funcion save, que guarda-->
-        <button id="save-btn" onclick="save()">GUARDAR</button>  
+        <button id="save-btn" onclick="save()">GUARDAR</button>
+        <button id="reset-btn" onclick="reset()">REINICIAR CONTADOR</button>  
         <p id="save-el">Entradas anteriores:</p>
+       
+
         <script src="index.js"></script>    
         
         <table>
-            <tr>
-                <th>Destino</th>
-                <th>Precio por Billete (€)</th>
-                <th>Cantidad</th>
+            <tr> 
+                <th width="25%">Destino</th>
+                <th width="25%">Precio por Billete (€)</th>
+                <th width="20%">Cantidad</th>
                 <th>Total (€)</th>
             </tr>
             
             <tr>
                 <td>Madrid</td>
-                <td>30€</td>
-                <td><input type="number" min="0" value="0" onclick="calculoTotal()"></td>
-                <td><p id="precio-final">0 €</p></td>
+                <td id="precio">30€</td>
+                <td><input type="number" id="billete-madrid" value="0" min="0" onclick="venta('madrid',30)"></td>
+                <td id="total"><p id="precio-final-madrid">0 €</p></td>
             </tr>
             
             <tr>
                 <td>Sevilla</td>
-                <td>35€</td>
-                <td><input type="number" min="0" value="0"></td>
-                <td><p id="precio-final">0 €</p></td>
+                <td id="precio">35€</td>
+                <td><input type="number" id="billete-sevilla" value="0" min="0" onclick="venta('sevilla',35)"></td>
+                <td id="total"><p id="precio-final-sevilla">0 €</p></td>
             </tr>
+
             <tr>
                 <td>Granada</td>
-                <td>25€</td>
-                <td><input type="number" min="0" value="0"></td>
-                <td><p id="precio-final">0 €</p></td>
+                <td id="precio">25€</td>
+                <td><input type="number" id="billete-granada" value="0" min="0" onclick="venta('granada',25)"></td>
+                <td id="total"><p id="precio-final-granada">0 €</p></td>
             </tr>
              <tr>
                 <td>Barcelona</td>
-                <td>45€</td>
-                <td><input type="number" min="0" value="0"></td>
-                <td><p id="precio-final">0 €</p></td>
+                <td id="precio">45€</td>
+                <td><input type="number" id="billete-barcelona" value="0" min="0" onclick="venta('barcelona',45)"></td>
+                <td id="total"><p id="precio-final-barcelona">0 €</p></td>
             </tr>
             <tr>
                 <td>Valencia</td>
-                <td>20€</td>
-                <td><input type="number" min="0" value="0"></td>
-                <td><p id="precio-final">0 €</p></td>
+                <td id="precio">20€</td>
+                <td><input type="number" id="billete-valencia" value="0" min="0" onclick="venta('valencia',20)"></td>
+                <td id="total"><p id="precio-final-valencia">0 €</p></td>
             </tr>
             <tr>
                 <td>Vigo</td>
-                <td>50€</td>
-                <td><input type="number" min="0" value="0"></td>
-                <td><p id="precio-final">0 €</p></td>
+                <td id="precio">50€</td>
+                <td><input type="number" id="billete-vigo" value="0" min="0" onclick="venta('vigo',50)"></td>
+                <td id="total"><p id="precio-final-vigo">0 €</p></td>
             </tr>
         </table>         
     </body>

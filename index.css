@@ -22,7 +22,7 @@ hr {
 h2 {
     font-size: 50px;
     margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 45px;
     color: white;
 }
 
@@ -49,6 +49,10 @@ button {
     background: rgb(25, 154, 177);
 }
 
+#reset-btn {
+    background: rgb(152, 25, 177);
+} 
+
 #save-el {
     margin-top: 40px;
     margin-bottom: 30px;
@@ -56,8 +60,9 @@ button {
     font-size: 20px;
 }
 
+
 table {
-    width: 49%;
+    width: 42%;
     margin: 60px auto;
     border-collapse: collapse;
     color: white
@@ -69,12 +74,29 @@ th, td {
     padding: 6px;
     text-align: left;
     color: white;
-    background-color: rgba(0, 0, 0, 0.555);
+    background-color: rgba(0, 0, 0, 0.660);
     
 }
 
 th {
-    background-color: rgba(0, 0, 0, 0.555);
+    background-color: rgba(0, 0, 0, 0.660);
     color: rgb(255, 213, 0);
+    text-align: center;
+}
+
+
+input {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.660) ;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+#precio {
+    text-align: center;
+}
+
+#total {
     text-align: center;
 }
